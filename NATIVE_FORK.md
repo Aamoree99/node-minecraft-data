@@ -1,0 +1,3 @@
+# Metadata repair
+Base wupengabc/node-minecraft-data9c3d5857616620b3c8b30c23631374dc874670a3 (@wp2508/minecraft-data3.111.6). This source vendors the minecraft-data directory as a Git tree, not a submodule. Consequently the changed library fork is node-minecraft-data, not the separate upstream dataset repository.
+Our change restores missing26.1 drops/harvest tools from pinned official minecraft-data3.117.0, translating item IDs by name;26.3 data is validated but unchanged. This is not a claim that we authored the inherited native26.3 dataset. License/attribution retained. Check: node --test test/loot-metadata.node.cjs. Consuming CaYa retains SHA512-verified native bootstrap for exact npm reproducibility.
